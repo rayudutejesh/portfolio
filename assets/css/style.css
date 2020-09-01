@@ -194,19 +194,23 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
   color: #fff;
   background: #009961;
+  z-index: 100;
 }
 
 .nav-menu a:hover span, .nav-menu .active > a span, .nav-menu li:hover > a span {
   color: #fff;
+  z-index: 100;
 }
 
 .nav-menu a:hover, .nav-menu li:hover > a {
   width: 100%;
   color: #fff;
+  z-index: 100;
 }
 
 .nav-menu a:hover span, .nav-menu li:hover > a span {
   display: block;
+  z-index: 100;
 }
 
 /* Mobile Navigation */
