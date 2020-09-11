@@ -1,9 +1,8 @@
 /*grid*/
 
 .grid{
-  position: relative;
-    
-    right: 1%;
+  position: relative; 
+    padding:50px;
   }
   .article-container {
     display: block;
