@@ -117,9 +117,9 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #header {
   position: fixed;
-  top: 10%;
+  top: 0;
   left: 0;
-  bottom: 10%;
+  bottom: 0;
   z-index: 9997;
   transition: all 0.5s;
   padding: 15px;
@@ -1179,12 +1179,14 @@ section {
   z-index: 100;
   top: 0%;
   width: 100%;
-  left: 5%;
-  height: 10vh;
+  left: 0;
+  height: 11vh;
   display: flex;
+  padding: 10px 40px;
+ 
 }
 .logo.active{
-  background-color: #fff;
+  background-color: #d8d4d4
 }
 #exampleSlider {
   position: relative;
