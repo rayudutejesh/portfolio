@@ -1,17 +1,28 @@
 /*grid*/
-
 .grid{
-  
+  position: absolute;
+  margin: 0;
+  left:0%;
+  width: 100%;
   justify-content: center;
   justify-items: center;
-   padding: 80px 60px;
-   
+  padding: 80px 80px 80px 0;
+ 
+  }
+  .cards-grid{
+    position: relative;
+    margin-left: 10%;
+    background-color: white;
+
+    padding: 50px;
+    padding-bottom: 15px;
   }
   .article-container {
     display: block;
     width: 350px;
     height: 264px;
     overflow: hidden;
+    background-color:white;
     border-radius: 5px;
     border: 0.5px solid rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
@@ -19,7 +30,7 @@
   }
   div.article-container:hover{
     
-    box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.4);
     transition: all 0.5s ease-in-out;
   }
   .imgtop{
@@ -37,7 +48,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: all 1s ease-in-out;
+    transition: all 0.4s ease-in-out;
     overflow: hidden;
   }
 
@@ -57,6 +68,12 @@
   .article-title-link:hover {
     text-decoration: underline;
   }
+  .start-date{
+    position: absolute;
+    left: 60%;
+    margin-right: -100px;
+  }
   .place-title{
     padding: 5px 0 0 10px;
+    background-color: #fff;
   }
