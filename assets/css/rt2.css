@@ -77,3 +77,19 @@
     padding: 5px 0 0 10px;
     background-color: #fff;
   }
+  #hero .nav-menu a{
+    width: 150px;
+    background-color: #009961;
+    color: white;
+
+    justify-content: center;
+    padding: 25px 0;
+    margin:5% 0 0 33%;
+
+  }  
+  #hero .nav-menu a:hover{
+    width: 150px;
+    background-color: #fff;
+    color: #009961;
+
+  }
