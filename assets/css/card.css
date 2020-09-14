@@ -2,7 +2,7 @@
     margin: 0 10px;
     position: relative;
     padding: 1%;
-    height: ;
+  
 }
 .card_price{
     border-radius: 3px;
@@ -62,13 +62,75 @@
         margin: 10% 0 0 25%;
       } 
   }
+    /*--------------------------------------------------------------
+# car type
+--------------------------------------------------------------*/
+.car_type{
+    width: 100%;
+    height: 3vh;
+    font-size: 16px;
+bottom: 5px;
+padding: 2% 0% 5% 8%;
+display: block;
+width: 100%;
+justify-content: space-between;
+border-top:1px solid #b1b1b1;
+
+background-color: #ffffff;
+border-bottom:1px solid #b1b1b1;
+}   
+/*--------------------------------------------------------------
+# itinerary
+--------------------------------------------------------------*/
+.itinerary{
+font-size: 25px;
+display: block;
+width: 100%;
+justify-content: space-between;
+height: 5vh;
+background-color: #fff;
+z-index: 100;
+padding: 2% 10% 6% 10%;
+border-bottom:1px solid #b1b1b1;
+
+}
+@media screen and (max-width: 768px) {
+
+}
+.active2 {
+    color: #009961!important;
+    font-weight: 700;
+    border-bottom: 2px solid #009961;
+    height: 55px;
+}
+
+
+    /*--------------------------------------------------------------
+# activity
+--------------------------------------------------------------*/
+.activity{
+font-size: 25px;
+bottom: 5px;
+padding: 2% 5% 6% 5%;
+display: block;
+width: 100%;
+justify-content: space-between;
+
+height: 5vh;
+background-color: #ffffff;
+z-index: 100000;
+border-bottom:1px solid #b1b1b1;
+
+}
+
   /*--------------------------------------------------------------
 # dayplan box
 --------------------------------------------------------------*/
+
   .datacardbox {
       margin: 0;
     padding:2rem;
-    width: 100%;
+    width: 99%;
     z-index: 10000;
     
 }
@@ -156,67 +218,7 @@
 #policy{
     font-size: 1.4rem;
 }
-/* route map code */
 
-.routemap{
-    position: relative;
-    font-size: 1rem;
-}
-.routemap::before{
-    content: "";
-    position: absolute;
-    left: 5px;
-    top: 0;
-    width: 2px;
-    height: 100%;
-    background-color: #aaa;
-    display: block;
-}
-.timeline-content{
-    position: relative;
-    padding: 8px 0 16px;
-    min-height: 96px;
-}
-.timeline-content::before{
-    content: "";
-    position: absolute;
-    left: 5;
-    bottom: 0;
-    width: 12px;
-    height: 2px;
-    background-color: #aaa;
-}
-.timeline-content::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 12px;
-    height: 2px;
-    background-color: #aaa;
-}
-.item{
-    position: relative;
-    padding-top:1rem ;
-}
-.item::before{
-    content: "";
-    position: absolute;
-    left: 3px;
-    top: 32px;
-    width: 6px;
-    height: 6px;
-    box-shadow: 0 0 0 2px #aaa;
-    background-color: #aaa;
-    border-radius: 100%;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-}
-.item span{
-    padding-left: 1rem;
-    
-}
 /*vertical line*/
 div.vertical-line{
  
@@ -227,3 +229,17 @@ div.vertical-line{
       You can instead use position:absolute or display:inline-block
       if this fits better with your design */
   }
+
+  .sticky {
+    position: fixed;
+    top: 11vh;
+    width: 66.334%
+  }
+  #headr{
+    z-index: 100;
+  }
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 102px;
+  }
+  

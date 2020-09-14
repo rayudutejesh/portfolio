@@ -19,13 +19,13 @@
             }
 
             $(".activity .plan").on('click', function () {
-                $(this).siblings().removeClass('active');
-                $(this).siblings().removeClass('active');
-                $(this).addClass('active');
+                $(this).siblings().removeClass('active2');
+                $(this).siblings().removeClass('active2');
+                $(this).addClass('active2');
             });
             $(".itinerary .Visa").on('click', function () {
                 $(this).siblings().removeClass('active2');
-
+                $(this).siblings().removeClass('active2');
                 $(this).addClass('active2');
 
             });
@@ -162,33 +162,30 @@
             }
         }
 
-        function w3_open() {
+        
 
-            dis = document.getElementsByClassName("onhover1");
-            let atag = document.getElementsByClassName("w3-button  ");
-            let na = document.getElementsByClassName("w3-sidebar");
-            if (dis[0].style.display == "none") {
-                for (let i = 0; i < dis.length; i++) {
-                    dis[i].style.display = "inline";
-                    atag[i].style.display = "inline";
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
 
-                    if (screen.width <= 776) {
-                        na[0].style.background = "white";
-                    }
-                }
-            } else {
-                for (let i = 0; i < dis.length; i++) {
-                    dis[i].style.display = "none";
-                    if (screen.width <= 776) {
-                        atag[i].style.display = "none";
-                        na[0].style.background = "transparent";
-                    }
+// Get the header
+var header = document.getElementById("headr");
 
-                }
-            }
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
 
-        }
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > 425) {
+    header.classList.add("sticky");
+    $('.datacard').css({
+        'margin-top': '148px'
+     
+    });
 
-        function w3_close() {
-            document.getElementById("mySidebar").style.display = "none";
-        }
+  } else {
+    header.classList.remove("sticky");
+    $('.datacard').css({
+        'margin-top': '0px'
+    });
+ }
+}
