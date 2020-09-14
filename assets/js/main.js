@@ -84,7 +84,7 @@ $('#exampleSlider').multislider({
       }
     }
   });
-
+//mobile nav
   $(document).on('click', '.mobile-nav-toggle', function(e) {
     $('body').toggleClass('mobile-nav-active');
     $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
@@ -157,7 +157,7 @@ $('#exampleSlider').multislider({
   // Init AOS
   function aos_init() {
     AOS.init({
-      duration: 1000,
+      duration: 2000,
       once: true
     });
   }

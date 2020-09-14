@@ -1,0 +1,229 @@
+.contain{
+    margin: 0 10px;
+    position: relative;
+    padding: 1%;
+    height: ;
+}
+.card_price{
+    border-radius: 3px;
+    border: 1px solid #555555;
+    padding: 10px 10px;
+    width: 100%;
+    justify-content: center;
+    background-color: #fff;
+    z-index: 1;
+}
+.fixed {
+    position: fixed;
+}
+.card_actual_price{
+    background-color: #e2f2ff;
+    padding: 10px;
+    border-radius: 3px;
+    width: 100%;
+    justify-content: center;
+}
+.card_actual_price .card_taxes{
+    font-size: 12px;
+}
+.price_details{
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin: 2px 0;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+#services .nav-menu a{
+    width: 50%;
+    background-color: #fff;
+    border:2px solid #009961;
+    justify-content: center;
+    margin: 15% 0 0 25%;
+  }  
+#services .nav-menu a:hover{
+    width: 50%;
+    background-color: #009961;
+  }
+/*--------------------------------------------------------------
+# Disable fixed price col on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+    #price{
+      position: relative;
+     justify-content: center;
+     ;
+    }
+    #services .nav-menu a{
+        width: 50%;
+        background-color: #fff;
+        border:2px solid #009961;
+        justify-content: center;
+        margin: 10% 0 0 25%;
+      } 
+  }
+  /*--------------------------------------------------------------
+# dayplan box
+--------------------------------------------------------------*/
+  .datacardbox {
+      margin: 0;
+    padding:2rem;
+    width: 100%;
+    z-index: 10000;
+    
+}
+    
+.datacardbox .header{
+    
+    font-size: 20px;
+    font-weight: 400;
+    height: 50px;
+    padding: 10px;
+    background-color: #ebeef2;
+    border: 1px solid black;
+    border-bottom: none;
+}
+
+.datacardbox .header .left{
+    padding-left: 0rem;
+}
+.datacardbox .header .right{
+    position: absolute;
+    text-align: right;
+  
+}
+.datacardbox .datacardbody{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-top: none;
+}
+.datacardbody .dataimg{
+    width: 100%;
+    height: auto;
+}
+.datacardbody img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0.5rem;
+}
+.datacardbody .details{
+    width: 100%;
+    height: auto;
+}
+.details .hotel_name{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-left: 1rem;
+}
+.details .loc{
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-left: 1rem;
+}
+.details .dateH{
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-left: 1rem;
+}
+.details .date{
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-left: 1rem;
+}
+
+.datacardbody .dataLastpart{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column  ;
+}
+.highlight p{
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.highlight ul{
+    list-style:circle;
+    padding-left: 1rem;
+    margin-left: 3rem;
+    font-size: 1.2rem;
+}
+
+#policy{
+    font-size: 1.4rem;
+}
+/* route map code */
+
+.routemap{
+    position: relative;
+    font-size: 1rem;
+}
+.routemap::before{
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #aaa;
+    display: block;
+}
+.timeline-content{
+    position: relative;
+    padding: 8px 0 16px;
+    min-height: 96px;
+}
+.timeline-content::before{
+    content: "";
+    position: absolute;
+    left: 5;
+    bottom: 0;
+    width: 12px;
+    height: 2px;
+    background-color: #aaa;
+}
+.timeline-content::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 12px;
+    height: 2px;
+    background-color: #aaa;
+}
+.item{
+    position: relative;
+    padding-top:1rem ;
+}
+.item::before{
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: 32px;
+    width: 6px;
+    height: 6px;
+    box-shadow: 0 0 0 2px #aaa;
+    background-color: #aaa;
+    border-radius: 100%;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+.item span{
+    padding-left: 1rem;
+    
+}
+/*vertical line*/
+div.vertical-line{
+ 
+    width: 1px; /* Line width */
+    background-color: black; /* Line color */
+    height: 100%; /* Override in-line if you want specific height. */
+    float: left; /* Causes the line to float to left of content. 
+      You can instead use position:absolute or display:inline-block
+      if this fits better with your design */
+  }

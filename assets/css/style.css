@@ -125,6 +125,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   padding: 15px;
   overflow-y: auto;
+  background-color: none;
 
 }
 
@@ -255,12 +256,11 @@ h1, h2, h3, h4, h5, h6 {
   height: 100vh;
   background-color: #fff;
   justify-content: center;
-  
   background-size: cover;
   position: relative;
 }
 #hero .col{
-  padding: 17%;
+  justify-content: center;
 }
 @media (min-width: 992px) {
   #hero {
@@ -273,7 +273,7 @@ h1, h2, h3, h4, h5, h6 {
   background-image: linear-gradient(to right , rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699));
   background-size: cover;
   position: absolute;
-
+  justify-content: center;
   bottom: 0;
   top: 0;
   left: 0;
