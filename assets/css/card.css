@@ -2,7 +2,7 @@
 .contain{
     margin: 0 10px;
     position: relative;
-    padding: 1%;
+    padding: 1% 1% 1% 1%;
   
 }
 .card_price{
@@ -72,19 +72,23 @@
     justify-content: space-between;
     height: 8vh;
     background-color: #fff;
-    
-    padding: 1.5% 5% 2% 5%;
+    font-size: 17px;
+    color: #4a4a4a;
+    padding: 1% 5% 2% 5%;
     border-bottom:1px solid #e2e2e2;
     border-top:1px solid #e2e2e2;
 }
 .car_type select{
+    
     width: 200px;
     border-radius: 50px;
-    background-color: #e2f2ff;
+    background-color: #ffffff;
     color: #555555;
+    border: 2px solid #009961;
     z-index: 1;
+    padding: 5px 20px;
+    justify-content: space-around;
     outline:none;
-    border: none;
     cursor: pointer;
 } 
   
@@ -96,11 +100,13 @@
 # itinerary
 --------------------------------------------------------------*/
 .itinerary{
-font-size: 25px;
+font-size: 18px;
+font-weight: 750;
+color: #4a4a4a;
 display: block;
 width: 100%;
 justify-content: space-between;
-height: 9vh;
+height: 7vh;
 background-color: #fff;
 z-index: 100;
 padding: 1% 10% 0% 10%;
@@ -115,7 +121,7 @@ border-bottom:1px solid #e2e2e2;
 }
 .active2 {
     color: #009961!important;
-    font-weight: 700;
+    
     border-bottom: 2px solid #009961;
     height: 100%;
 }
@@ -125,25 +131,33 @@ border-bottom:1px solid #e2e2e2;
 # activity
 --------------------------------------------------------------*/
 .activity{
-    font-size: 20px;
+    font-size: 17px;
     display: block;
     width: 100%;
     justify-content: space-between;
     height: 8vh;
     background-color: #fff;
-    
-    padding: 1% 5% 0 5%;
+    font-weight: 400;
+    color: #4a4a4a;
+    padding: 1% 5% 1% 5%;
     border-bottom:1px solid #e2e2e2;
 
 }
 .active3 {
     color: #009961!important;
-    font-weight: 700;
-    border-bottom: 2px solid #009961;
+    border-radius: 30px;
+
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
     height: 100%;
+    background-color: #ffffff;
+    
 }
 #flight,#flight2,#flight3,#flight4,#flight5,#flight6{
     cursor: pointer;
+    
+    justify-content: center;
+    padding: 5px 10px;
+  
 }
 
   /*--------------------------------------------------------------
@@ -153,17 +167,43 @@ border-bottom:1px solid #e2e2e2;
   .datacardbox {
       margin: 0;
     padding:2rem;
-    width: 99%;
-    z-index: 10000;
-    
+    width: 90%;
+    z-index: 1;
+    position: relative;
+    left: 9.5%;
+    top:-7.3%; 
 }
-    
+.day_list{
+      margin: 0;
+      padding-top:2rem;
+      width: 10%;
+      z-index: 1000;
+}
+.day_list a{
+    border: none;
+    background-color: black;
+}
+.anchor1{
+    display: block;
+    height: 400px; /*same height as header*/
+    margin-top: -400px; /*same height as header*/
+    visibility: hidden;
+  }
+#services .datacard .nav-menu h4{
+    font-size: 15px;
+}
+#services .datacard .nav-menu a{
+    font-size: 15px;
+    border: none;
+    height: 5px;
+}
 .datacardbox .header{
     
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 500;
     height: 50px;
     padding: 10px;
+    color: #4a4a4a;
     background-color: #ebeef2;
     border: 1px solid black;
     border-bottom: none;
@@ -171,10 +211,13 @@ border-bottom:1px solid #e2e2e2;
 
 .datacardbox .header .left{
     padding-left: 0rem;
+    justify-content: space-between;
 }
 .datacardbox .header .right{
     position: absolute;
     text-align: right;
+    right: 20%;
+    justify-content: space-between;
   
 }
 .datacardbox .datacardbody{
@@ -199,23 +242,24 @@ border-bottom:1px solid #e2e2e2;
     height: auto;
 }
 .details .hotel_name{
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 550;
     padding-left: 1rem;
+    color: #4a4a4a;
 }
 .details .loc{
-    font-size: 1.2rem;
+    font-size: 14px;
     font-weight: 300;
     padding-left: 1rem;
 }
 .details .dateH{
-    font-size: 1.5rem;
+    font-size: 15px;
     font-weight: 400;
     padding-left: 1rem;
 }
 .details .date{
-    font-size: 1.2rem;
-    font-weight: 300;
+    font-size: 14px;
+    font-weight: 400;
     padding-left: 1rem;
 }
 
@@ -227,7 +271,7 @@ border-bottom:1px solid #e2e2e2;
 }
 .highlight p{
     padding-left: 1rem;
-    font-size: 1.5rem;
+    font-size: 16px;
     font-weight: 500;
 }
 
@@ -235,11 +279,11 @@ border-bottom:1px solid #e2e2e2;
     list-style:circle;
     padding-left: 1rem;
     margin-left: 3rem;
-    font-size: 1.2rem;
+    font-size: 14px;
 }
 
 #policy{
-    font-size: 1.4rem;
+    font-size: 15px;
 }
 
 /*vertical line*/

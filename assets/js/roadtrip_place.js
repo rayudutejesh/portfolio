@@ -4,6 +4,7 @@
                 $("nav").toggleClass("scrolled", $(this).scrollTop() > 100);
                 $("w3-sidebar").toggleClass("w3-sidebarab", $(this).scrollTop() > 300);
             });
+           
             // $('.active').click(function () {
             //     $('.datacard').collapse('toggle');
             // });
@@ -141,27 +142,6 @@
             return null;
         }
 
-        function hovereffect() {
-            let dis = document.getElementsByClassName("onhover1");
-
-            for (let i = 0; i < dis.length; i++) {
-                dis[i].style.display = "inline";
-
-
-            }
-
-
-
-        }
-        function hoverout() {
-            dis = document.getElementsByClassName("onhover1");
-
-            for (let i = 0; i < dis.length; i++) {
-                dis[i].style.display = "none";
-
-            }
-        }
-
         
 
 // When the user scrolls the page, execute myFunction
@@ -169,23 +149,58 @@ window.onscroll = function() {myFunction()};
 
 // Get the header
 var header = document.getElementById("headr");
+var resume = document.getElementById("rout");
+var day_list = document.getElementById("day_list");
 
 // Get the offset position of the navbar
 var sticky = header.offsetTop;
 
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
-  if (window.pageYOffset > 405) {
-    header.classList.add("sticky");
-    $('.datacard').css({
-        'margin-top': '120px'
+    if (window.pageYOffset > 150) {
      
+        resume.classList.add("sticky");
+        $('.resume').css({
+            'margin-top': '130px',
+            'padding-left':'21px'
+         
+        });
+      
+    
+      } else {
+       
+        resume.classList.remove("sticky");
+        $('.resume').css({
+            'margin-top': '0px',
+            'padding-left':'0px'
+         
+        });
+     }
+  if (window.pageYOffset > 390) {
+    header.classList.add("sticky");
+    day_list.classList.add("sticky");
+    
+    $('.datacard').css({
+        'margin-top': '35.5%'
     });
+    $('.day_list').css({
+        'margin-top': '100px',
+        
+    });
+  
 
   } else {
     header.classList.remove("sticky");
+    day_list.classList.remove("sticky");
+    
     $('.datacard').css({
         'margin-top': '0px'
     });
- }
+    $('.day_list').css({
+        'margin-top': '0px'
+    });
+    }
 }
+
+
+
