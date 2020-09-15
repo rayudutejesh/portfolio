@@ -19,9 +19,9 @@
             }
 
             $(".activity .plan").on('click', function () {
-                $(this).siblings().removeClass('active2');
-                $(this).siblings().removeClass('active2');
-                $(this).addClass('active2');
+                $(this).siblings().removeClass('active3');
+                $(this).siblings().removeClass('active3');
+                $(this).addClass('active3');
             });
             $(".itinerary .Visa").on('click', function () {
                 $(this).siblings().removeClass('active2');
@@ -175,10 +175,10 @@ var sticky = header.offsetTop;
 
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
-  if (window.pageYOffset > 425) {
+  if (window.pageYOffset > 405) {
     header.classList.add("sticky");
     $('.datacard').css({
-        'margin-top': '148px'
+        'margin-top': '120px'
      
     });
 

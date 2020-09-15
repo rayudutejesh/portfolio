@@ -1,3 +1,4 @@
+
 .contain{
     margin: 0 10px;
     position: relative;
@@ -63,22 +64,34 @@
       } 
   }
     /*--------------------------------------------------------------
-# car type
+# trip type
 --------------------------------------------------------------*/
-.car_type{
+.trip_type{
+    display: block;
     width: 100%;
-    height: 3vh;
-    font-size: 16px;
-bottom: 5px;
-padding: 2% 0% 5% 8%;
-display: block;
-width: 100%;
-justify-content: space-between;
-border-top:1px solid #b1b1b1;
-
-background-color: #ffffff;
-border-bottom:1px solid #b1b1b1;
-}   
+    justify-content: space-between;
+    height: 8vh;
+    background-color: #fff;
+    
+    padding: 1.5% 5% 2% 5%;
+    border-bottom:1px solid #e2e2e2;
+    border-top:1px solid #e2e2e2;
+}
+.car_type select{
+    width: 200px;
+    border-radius: 50px;
+    background-color: #e2f2ff;
+    color: #555555;
+    z-index: 1;
+    outline:none;
+    border: none;
+    cursor: pointer;
+} 
+  
+.car_type select option select{
+    border: none;
+    outline: none;
+}
 /*--------------------------------------------------------------
 # itinerary
 --------------------------------------------------------------*/
@@ -87,12 +100,15 @@ font-size: 25px;
 display: block;
 width: 100%;
 justify-content: space-between;
-height: 5vh;
+height: 9vh;
 background-color: #fff;
 z-index: 100;
-padding: 2% 10% 6% 10%;
-border-bottom:1px solid #b1b1b1;
+padding: 1% 10% 0% 10%;
+border-bottom:1px solid #e2e2e2;
 
+}
+#visa1,#visa2,#visa3{
+    cursor: pointer;
 }
 @media screen and (max-width: 768px) {
 
@@ -101,7 +117,7 @@ border-bottom:1px solid #b1b1b1;
     color: #009961!important;
     font-weight: 700;
     border-bottom: 2px solid #009961;
-    height: 55px;
+    height: 100%;
 }
 
 
@@ -109,18 +125,25 @@ border-bottom:1px solid #b1b1b1;
 # activity
 --------------------------------------------------------------*/
 .activity{
-font-size: 25px;
-bottom: 5px;
-padding: 2% 5% 6% 5%;
-display: block;
-width: 100%;
-justify-content: space-between;
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    justify-content: space-between;
+    height: 8vh;
+    background-color: #fff;
+    
+    padding: 1% 5% 0 5%;
+    border-bottom:1px solid #e2e2e2;
 
-height: 5vh;
-background-color: #ffffff;
-z-index: 100000;
-border-bottom:1px solid #b1b1b1;
-
+}
+.active3 {
+    color: #009961!important;
+    font-weight: 700;
+    border-bottom: 2px solid #009961;
+    height: 100%;
+}
+#flight,#flight2,#flight3,#flight4,#flight5,#flight6{
+    cursor: pointer;
 }
 
   /*--------------------------------------------------------------
