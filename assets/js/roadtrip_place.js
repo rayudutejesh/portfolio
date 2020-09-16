@@ -151,18 +151,20 @@ window.onscroll = function() {myFunction()};
 var header = document.getElementById("headr");
 var resume = document.getElementById("rout");
 var day_list = document.getElementById("day_list");
-
+var price_card = document.getElementById("price");
 // Get the offset position of the navbar
 var sticky = header.offsetTop;
 
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
-    if (window.pageYOffset > 150) {
+  
+   
+    if (window.pageYOffset > 270) {
      
         resume.classList.add("sticky");
         $('.resume').css({
-            'margin-top': '130px',
-            'padding-left':'21px'
+            'margin-top': '10%',
+            'padding-left':'1.6vw'
          
         });
       
@@ -176,29 +178,29 @@ function myFunction() {
          
         });
      }
-  if (window.pageYOffset > 390) {
-    header.classList.add("sticky");
+  if (window.pageYOffset > 430) {
+        header.classList.add("sticky");
     day_list.classList.add("sticky");
-    
     $('.datacard').css({
-        'margin-top': '35.5%'
+        'margin-top': '20%'
     });
     $('.day_list').css({
-        'margin-top': '100px',
-        
+        'margin-top': '110%'
     });
-  
-
+    
   } else {
     header.classList.remove("sticky");
     day_list.classList.remove("sticky");
     
     $('.datacard').css({
-        'margin-top': '0px'
+        'margin-top': '5%'
     });
     $('.day_list').css({
-        'margin-top': '0px'
+        'margin-top': '-160%',
+        'left':'-10%'
     });
+    
+    
     }
 }
 

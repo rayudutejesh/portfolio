@@ -1,51 +1,60 @@
 
 .contain{
-    margin: 0 10px;
+    margin: 0;
     position: relative;
-    padding: 1% 1% 1% 1%;
+    padding: 0 1% 0 0;
+    width: 100%;
   
 }
+.price{z-index: 1000;}
 .card_price{
+    position: absolute;
     border-radius: 3px;
-    border: 1px solid #555555;
-    padding: 10px 10px;
-    width: 100%;
+    border: 1px solid #4a4a4a;
+    padding: 1vh 1vh;
+    width: 90%;
+   
+    height: 100%;
     justify-content: center;
     background-color: #fff;
-    z-index: 1;
+    z-index: 10;
 }
 .fixed {
     position: fixed;
 }
 .card_actual_price{
     background-color: #e2f2ff;
-    padding: 10px;
+    padding: 1vw;
     border-radius: 3px;
     width: 100%;
     justify-content: center;
 }
 .card_actual_price .card_taxes{
-    font-size: 12px;
+    font-size: 1.5vw;
 }
 .price_details{
     background-color: #f2f2f2;
-    padding: 10px;
-    margin: 2px 0;
+    padding: 1vw;
+    margin: 0.3vw 0;
     border-radius: 3px;
-    font-size: 15px;
+    font-size: 1vw;
 }
 
 #services .nav-menu a{
     width: 50%;
     background-color: #fff;
-    border:2px solid #009961;
+    border:0.2vw solid #009961;
     justify-content: center;
-    margin: 15% 0 0 25%;
+    margin: 1.5vw 5vw;
   }  
-#services .nav-menu a:hover{
+#services .nav-menu a:hover,
+#services .nav-menu.active > a,
+#services .nav-menu a:focus{
     width: 50%;
+    color: #fff;
     background-color: #009961;
   }
+
 /*--------------------------------------------------------------
 # Disable fixed price col on mobile devices
 --------------------------------------------------------------*/
@@ -70,23 +79,23 @@
     display: block;
     width: 100%;
     justify-content: space-between;
-    height: 8vh;
+    height: 5vw;
     background-color: #fff;
-    font-size: 17px;
+    font-size: 1.5vw;
     color: #4a4a4a;
-    padding: 1% 5% 2% 5%;
+    padding: 1vw;
     border-bottom:1px solid #e2e2e2;
     border-top:1px solid #e2e2e2;
 }
 .car_type select{
     
-    width: 200px;
+    width: 15vw;
     border-radius: 50px;
     background-color: #ffffff;
     color: #555555;
-    border: 2px solid #009961;
+    border: 0.1vw solid #009961;
     z-index: 1;
-    padding: 5px 20px;
+    padding: 0.5vw 1.5vw;
     justify-content: space-around;
     outline:none;
     cursor: pointer;
@@ -100,20 +109,25 @@
 # itinerary
 --------------------------------------------------------------*/
 .itinerary{
-font-size: 18px;
-font-weight: 750;
-color: #4a4a4a;
 display: block;
 width: 100%;
-justify-content: space-between;
-height: 7vh;
+height: 4vw;
 background-color: #fff;
-z-index: 100;
-padding: 1% 10% 0% 10%;
+font-size: 1.5vw;
+font-weight: 600;
+color: #4a4a4a;
+padding: 1vw 1vw 0 1vw;
 border-bottom:1px solid #e2e2e2;
+border-top:1px solid #e2e2e2;
 
 }
-#visa1,#visa2,#visa3{
+#visa1,#visa2{
+    cursor: pointer;
+    margin-right:10% ;
+    
+}
+#visa3{
+    margin-left: 30%;
     cursor: pointer;
 }
 @media screen and (max-width: 768px) {
@@ -121,8 +135,7 @@ border-bottom:1px solid #e2e2e2;
 }
 .active2 {
     color: #009961!important;
-    
-    border-bottom: 2px solid #009961;
+    border-bottom: 0.25vw solid #009961;
     height: 100%;
 }
 
@@ -131,82 +144,110 @@ border-bottom:1px solid #e2e2e2;
 # activity
 --------------------------------------------------------------*/
 .activity{
-    font-size: 17px;
     display: block;
     width: 100%;
-    justify-content: space-between;
-    height: 8vh;
+    height: 4.5vw;
     background-color: #fff;
-    font-weight: 400;
+    font-size: 1.1vw;
+    font-weight: 500;
     color: #4a4a4a;
-    padding: 1% 5% 1% 5%;
+    padding: 1vw 1vw 1vw 1vw;
     border-bottom:1px solid #e2e2e2;
+    border-top:1px solid #e2e2e2;
 
 }
 .active3 {
     color: #009961!important;
     border-radius: 30px;
 
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 0.5vw 0px rgba(0,0,0,0.5);
     height: 100%;
     background-color: #ffffff;
     
 }
 #flight,#flight2,#flight3,#flight4,#flight5,#flight6{
     cursor: pointer;
-    
+    width: 12%;
+    text-align: center;
     justify-content: center;
-    padding: 5px 10px;
+    padding: 0.4vw 0 ;
   
 }
 
   /*--------------------------------------------------------------
 # dayplan box
 --------------------------------------------------------------*/
-
-  .datacardbox {
-      margin: 0;
-    padding:2rem;
-    width: 90%;
-    z-index: 1;
+.datacard{
+    width: 94%;
+    margin: 0;
+    padding: 0;
+}
+.datacardbox {
+    padding: 1% 0;
+    z-index: -1;
     position: relative;
-    left: 9.5%;
-    top:-7.3%; 
+    left: 6%;
+    top:-2%;
+    
+    background-color: #fff;
+}
+@media screen and (min-width: 1350px){
+    .datacardbox{
+        top:-1%
+    }
+     .day_list{
+        top: 2%;
+        margin-left: 1%;
+    }
+
 }
 .day_list{
-      margin: 0;
-      padding-top:2rem;
+      margin-left: -1.5vw;
+      padding-top:2vw;
       width: 10%;
-      z-index: 1000;
+      z-index: 1;
+      height: 5vw;
+      
 }
-.day_list a{
-    border: none;
-    background-color: black;
+#services .nav-menu .day_list span{
+    width: 10%;
+    left: -100%;
 }
+
 .anchor1{
     display: block;
-    height: 400px; /*same height as header*/
-    margin-top: -400px; /*same height as header*/
+    height: 20vw; /*same height as header*/
+    margin-top: -20vw; /*same height as header*/
     visibility: hidden;
   }
-#services .datacard .nav-menu h4{
-    font-size: 15px;
-}
-#services .datacard .nav-menu a{
-    font-size: 15px;
+.day_list h5{
+    font-size: 1vw;
+   
+    margin-left: -0.5vw;
+    }
+.cardboxbody .day_list a{
+        width: 200%;
+            cursor: pointer;
+    }
+    .cardboxbody  .day_list span{
+    font-size: 1.5vw;
     border: none;
-    height: 5px;
+    height: 3vw;
+    cursor: pointer;
 }
+
 .datacardbox .header{
     
-    font-size: 18px;
+    font-size: 1.4vw;
     font-weight: 500;
-    height: 50px;
-    padding: 10px;
+    height: 4vw;
+    padding: 1vw;
     color: #4a4a4a;
     background-color: #ebeef2;
-    border: 1px solid black;
+    border: 0.1vw solid rgba(44,47,66,.2);
     border-bottom: none;
+    border-top-left-radius: 0.5vw;
+    border-top-right-radius: 0.5vw;
 }
 
 .datacardbox .header .left{
@@ -224,41 +265,43 @@ border-bottom:1px solid #e2e2e2;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid black;
+    border: 0.1vw solid rgba(44,47,66,.2);
     border-top: none;
+    border-bottom-left-radius: 0.5vw;
+    border-bottom-right-radius: 0.5vw;
 }
 .datacardbody .dataimg{
     width: 100%;
-    height: auto;
+    height: 0%;
 }
 .datacardbody img{
     width: 100%;
-    height: 100%;
+    height: 0%;
     object-fit: cover;
-    padding: 0.5rem;
+    padding: 1rem 0;
 }
 .datacardbody .details{
     width: 100%;
     height: auto;
 }
 .details .hotel_name{
-    font-size: 18px;
-    font-weight: 550;
-    padding-left: 1rem;
-    color: #4a4a4a;
+    font-size: 1.4vw;
+    font-weight: 500;
+    padding-lef: em;
+    color: #4a4a4a
 }
 .details .loc{
-    font-size: 14px;
+    font-size:0.1vw;
     font-weight: 300;
     padding-left: 1rem;
 }
 .details .dateH{
-    font-size: 15px;
+    font-size: 1.3vw;
     font-weight: 400;
     padding-left: 1rem;
 }
 .details .date{
-    font-size: 14px;
+    font-size: 1.3vw;
     font-weight: 400;
     padding-left: 1rem;
 }
@@ -271,7 +314,7 @@ border-bottom:1px solid #e2e2e2;
 }
 .highlight p{
     padding-left: 1rem;
-    font-size: 16px;
+    font-size: 1.4vw;
     font-weight: 500;
 }
 
@@ -279,11 +322,11 @@ border-bottom:1px solid #e2e2e2;
     list-style:circle;
     padding-left: 1rem;
     margin-left: 3rem;
-    font-size: 14px;
+    font-size: 1.2vw;
 }
 
 #policy{
-    font-size: 15px;
+    font-size: 1.2vw;
 }
 
 /*vertical line*/
@@ -300,13 +343,15 @@ div.vertical-line{
   .sticky {
     position: fixed;
     top: 11vh;
-    width: 66.334%
+width: 68%;
   }
   #headr{
-    z-index: 100;
+    z-index: 1;
   }
   /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
   .sticky + .content {
     padding-top: 102px;
+    
   }
+ 
   
