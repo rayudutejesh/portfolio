@@ -16,7 +16,7 @@
             } else {
                 $(".card_container").addClass("card_container_mobile");
 
-                $(".route")[0].style.display = "none";
+              //  $(".route")[0].style.display = "none";
             }
 
             $(".activity .plan").on('click', function () {
@@ -144,65 +144,37 @@
 
         
 
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
 
-// Get the header
-var header = document.getElementById("headr");
-var resume = document.getElementById("rout");
-var day_list = document.getElementById("day_list");
-var price_card = document.getElementById("price");
-// Get the offset position of the navbar
-var sticky = header.offsetTop;
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  
-   
-    if (window.pageYOffset > 270) {
-     
-        resume.classList.add("sticky");
-        $('.resume').css({
-            'margin-top': '10%',
-            'padding-left':'1.6vw'
-         
-        });
-      
+//sticky day_plan function////////////////
+$(window).scroll(function(e){ 
+    var $el = $('.activity'); 
     
-      } else {
-       
-        resume.classList.remove("sticky");
-        $('.resume').css({
-            'margin-top': '0px',
-            'padding-left':'0px'
-         
-        });
-     }
-  if (window.pageYOffset > 430) {
-        header.classList.add("sticky");
-    day_list.classList.add("sticky");
-    $('.datacard').css({
-        'margin-top': '20%'
-    });
-    $('.day_list').css({
-        'margin-top': '110%'
-    });
-    
-  } else {
-    header.classList.remove("sticky");
-    day_list.classList.remove("sticky");
-    
-    $('.datacard').css({
-        'margin-top': '5%'
-    });
-    $('.day_list').css({
-        'margin-top': '-160%',
-        'left':'-10%'
-    });
-    
-    
+    var isPositionFixed = ($el.css('position') == 'fixed');
+    if ($(this).scrollTop() > 450 && !isPositionFixed){ 
+        
+      $el.css({'position': 'fixed','top':'10vh','z-index':'100','height':'','border':''}); 
     }
-}
-
-
+    if($(this).scrollTop() < 450 && isPositionFixed){
+      $el.css({'position': 'static','height':'60px'}); 
+    } 
+  });
+  //sticky daylist funnction/////////////////////
+  $(window).scroll(function(e){ 
+    var $el = $('.day_list'); 
+    
+    var isPositionFixed = ($el.css('position') == 'fixed');
+    if ($(this).scrollTop() > 450 && !isPositionFixed){ 
+      $el.css({'position': 'fixed','top': '170px','width':'100px','z-index':'100'}); 
+      $(".cardboxbody").css({'top': '80px'});
+    }
+    if($(this).scrollTop() < 450 && isPositionFixed){
+      $el.css({'position': 'static', 'top': '0','width':'100%'});
+      $(".cardboxbody").css({'top': '0'}); 
+    } 
+  });
+  //scrolling top on refresh///
+  $(window).on('beforeunload', function() {
+    $('body').hide();
+    $(window).scrollTop(0);
+  });
 
