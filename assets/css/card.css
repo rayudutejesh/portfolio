@@ -1,60 +1,134 @@
 
-.contain{
-    margin: 0;
-    position: relative;
-    padding: 0 1% 0 0;
-    width: 100%;
-  
+ body{
+        margin: 1% 0 0 6% ;
+        padding-top: 5%;
+    }
+    @media screen and (min-width:1400px){
+        body{
+            margin: 1% 200px 0% 300px;
+        }
+        header{
+          margin-left: 200px;
+        }
+        .route{
+          top:500px;
+          margin-top: 30px;
+          position: fixed;
+            height: 300px;
+            overflow-y: scroll;
+            width: 300px;
+            padding-left: 75px;
+          }
+    }
+    /*Set the row height to the viewport*/
+.row-height{
+height: 100vh;
 }
-.price{z-index: 1000;}
+
+/*Set up the columns with a 100% height, body color and overflow scroll*/
+
+.left{
+background-color: red;
+height: 100%;
+overflow-y: scroll;
+}
+
+.route{top:350px;
+position: fixed;
+height: 300px;
+overflow-y: scroll;
+width: 300px;
+padding-left: 75px;
+}
+#route{
+background-color: #fff; 
+height: 250px;
+z-index: 1000;
+position: fixed;
+width: 300px;
+
+}
+.mid{
+
+height: 520%;
+
+}
+.roadtrips_img_holder{
+width: 100%;
+height: 250px;
+}
+.roadtrips_img_holder img{
+width: 100%;
+height: 250px;
+}
+.roadtrips_vid_holder{
+width: 100%;
+height: 250px;
+}
+.roadtrips_vid_holder video{
+height: 250px;
+}
+.fixedElement {
+background-color: #c0c0c0;
+position:fixed;
+top:0;
+
+z-index:100;
+}
+
+
+/*Remove the scrollbar from Chrome, Safari, Edge and IE*/
+::-webkit-scrollbar {
+width: 0px;
+background: transparent;
+}
+
+* {
+-ms-overflow-style: none !important;
+}
+
 .card_price{
-    position: absolute;
     border-radius: 3px;
-    border: 1px solid #4a4a4a;
-    padding: 1vh 1vh;
-    width: 90%;
-   
-    height: 100%;
+    border: 1px solid #aaaaaa;
+    padding: 10px 10px;
+    height: 250px;
+    width: 100%;
     justify-content: center;
     background-color: #fff;
-    z-index: 10;
+    z-index: 1;
 }
 .fixed {
     position: fixed;
 }
 .card_actual_price{
     background-color: #e2f2ff;
-    padding: 1vw;
+    padding: 10px;
     border-radius: 3px;
     width: 100%;
     justify-content: center;
 }
 .card_actual_price .card_taxes{
-    font-size: 1.5vw;
+    font-size: 12px;
 }
 .price_details{
     background-color: #f2f2f2;
-    padding: 1vw;
-    margin: 0.3vw 0;
+    padding: 10px;
+    margin: 2px 0;
     border-radius: 3px;
-    font-size: 1vw;
+    font-size: 15px;
 }
 
-#services .nav-menu a{
+#route .nav-menu a{
     width: 50%;
     background-color: #fff;
-    border:0.2vw solid #009961;
+    border:2px solid #009961;
     justify-content: center;
-    margin: 1.5vw 5vw;
+    margin: 15% 0 0 25%;
   }  
-#services .nav-menu a:hover,
-#services .nav-menu.active > a,
-#services .nav-menu a:focus{
+#route .nav-menu a:hover{
     width: 50%;
-    color: #fff;
     background-color: #009961;
   }
-
 /*--------------------------------------------------------------
 # Disable fixed price col on mobile devices
 --------------------------------------------------------------*/
@@ -79,23 +153,23 @@
     display: block;
     width: 100%;
     justify-content: space-between;
-    height: 5vw;
+    height: 60px;
     background-color: #fff;
-    font-size: 1.5vw;
+    font-size: 17px;
     color: #4a4a4a;
-    padding: 1vw;
+    padding: 1% 5% 2% 5%;
     border-bottom:1px solid #e2e2e2;
     border-top:1px solid #e2e2e2;
 }
 .car_type select{
     
-    width: 15vw;
+    width: 200px;
     border-radius: 50px;
     background-color: #ffffff;
     color: #555555;
-    border: 0.1vw solid #009961;
+    border: 2px solid #009961;
     z-index: 1;
-    padding: 0.5vw 1.5vw;
+    padding: 5px 20px;
     justify-content: space-around;
     outline:none;
     cursor: pointer;
@@ -109,22 +183,22 @@
 # itinerary
 --------------------------------------------------------------*/
 .itinerary{
+font-size: 18px;
+font-weight: 750;
+color: #4a4a4a;
 display: block;
 width: 100%;
-height: 4vw;
+
+height: 50px;
 background-color: #fff;
-font-size: 1.5vw;
-font-weight: 600;
-color: #4a4a4a;
-padding: 1vw 1vw 0 1vw;
+z-index: 100;
+padding: 1% 10% 0% 1%;
 border-bottom:1px solid #e2e2e2;
-border-top:1px solid #e2e2e2;
 
 }
 #visa1,#visa2{
+    padding: 0 5%;
     cursor: pointer;
-    margin-right:10% ;
-    
 }
 #visa3{
     margin-left: 30%;
@@ -135,7 +209,8 @@ border-top:1px solid #e2e2e2;
 }
 .active2 {
     color: #009961!important;
-    border-bottom: 0.25vw solid #009961;
+    
+    border-bottom: 2px solid #009961;
     height: 100%;
 }
 
@@ -144,110 +219,95 @@ border-top:1px solid #e2e2e2;
 # activity
 --------------------------------------------------------------*/
 .activity{
-    display: block;
+    font-size: 16px;
+    padding-top: 1%;
     width: 100%;
-    height: 4.5vw;
+    justify-content: start;
+    height: 60px;
     background-color: #fff;
-    font-size: 1.1vw;
-    font-weight: 500;
+    font-weight: 400;
     color: #4a4a4a;
-    padding: 1vw 1vw 1vw 1vw;
-    border-bottom:1px solid #e2e2e2;
-    border-top:1px solid #e2e2e2;
 
+    border-bottom:1px solid #e2e2e2;
+
+}
+.activity.active3{
+    background-color: #black;
 }
 .active3 {
     color: #009961!important;
     border-radius: 30px;
-
-    box-shadow: 0px 0px 0.5vw 0px rgba(0,0,0,0.5);
-    height: 100%;
+    
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+    height: 78%;
     background-color: #ffffff;
     
 }
 #flight,#flight2,#flight3,#flight4,#flight5,#flight6{
     cursor: pointer;
-    width: 12%;
-    text-align: center;
+    
     justify-content: center;
-    padding: 0.4vw 0 ;
+    padding: 5px 25px;
   
 }
 
   /*--------------------------------------------------------------
 # dayplan box
 --------------------------------------------------------------*/
-.datacard{
-    width: 94%;
-    margin: 0;
-    padding: 0;
-}
-.datacardbox {
-    padding: 1% 0;
-    z-index: -1;
-    position: relative;
-    left: 6%;
-    top:-2%;
-    
-    background-color: #fff;
-}
-@media screen and (min-width: 1350px){
-    .datacardbox{
-        top:-1%
-    }
-     .day_list{
-        top: 2%;
-        margin-left: 1%;
-    }
 
+  .datacardbox {
+      margin: 0;
+    padding:2rem;
+    z-index: 1;
+    position: relative;
+    background-color: #fff;
+    width: 107%;
+    left: -5%;
+}
+.datacardbox::before{
+    content: "";
+    height: 100px;
+    width: 1px;
+    color: black;
+    justify-content: center;
+    z-index: 10000;
 }
 .day_list{
-      margin-left: -1.5vw;
-      padding-top:2vw;
-      width: 10%;
-      z-index: 1;
-      height: 5vw;
+      margin: 0;
+      padding-top:2rem;
+      height: 80px;
+      z-index: 1000;
       
-}
-#services .nav-menu .day_list span{
-    width: 10%;
-    left: -100%;
 }
 
 .anchor1{
     display: block;
-    height: 20vw; /*same height as header*/
-    margin-top: -20vw; /*same height as header*/
+    height: 20vh; /*same height as header*/
+    margin-top: -20vh; /*same height as header*/
     visibility: hidden;
   }
-.day_list h5{
-    font-size: 1vw;
-   
-    margin-left: -0.5vw;
-    }
-.cardboxbody .day_list a{
-        width: 200%;
-            cursor: pointer;
-    }
-    .cardboxbody  .day_list span{
-    font-size: 1.5vw;
-    border: none;
-    height: 3vw;
-    cursor: pointer;
+.day_list h4{
+    font-size: 15px;
 }
-
+.day_list a{
+    padding-left: 2em;
+    font-size: 15px;
+    border: none;
+    height: 35px;
+    margin-left: 3%;
+}
 .datacardbox .header{
     
-    font-size: 1.4vw;
+    font-size: 18px;
     font-weight: 500;
-    height: 4vw;
-    padding: 1vw;
+    height: 50px;
+    padding: 10px;
     color: #4a4a4a;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     background-color: #ebeef2;
-    border: 0.1vw solid rgba(44,47,66,.2);
+    border: 1px solid #aaaaaa;
     border-bottom: none;
-    border-top-left-radius: 0.5vw;
-    border-top-right-radius: 0.5vw;
 }
 
 .datacardbox .header .left{
@@ -265,43 +325,44 @@ border-top:1px solid #e2e2e2;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 0.1vw solid rgba(44,47,66,.2);
+    border: 1px solid #aaaaaa;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     border-top: none;
-    border-bottom-left-radius: 0.5vw;
-    border-bottom-right-radius: 0.5vw;
+    background-color: #fff;
 }
 .datacardbody .dataimg{
     width: 100%;
-    height: 0%;
+    height: auto;
 }
 .datacardbody img{
     width: 100%;
-    height: 0%;
+    height: 100%;
     object-fit: cover;
-    padding: 1rem 0;
+    padding: 0.5rem;
 }
 .datacardbody .details{
     width: 100%;
     height: auto;
 }
 .details .hotel_name{
-    font-size: 1.4vw;
-    font-weight: 500;
-    padding-lef: em;
-    color: #4a4a4a
+    font-size: 18px;
+    font-weight: 550;
+    padding-left: 1rem;
+    color: #4a4a4a;
 }
 .details .loc{
-    font-size:0.1vw;
+    font-size: 14px;
     font-weight: 300;
     padding-left: 1rem;
 }
 .details .dateH{
-    font-size: 1.3vw;
+    font-size: 15px;
     font-weight: 400;
     padding-left: 1rem;
 }
 .details .date{
-    font-size: 1.3vw;
+    font-size: 14px;
     font-weight: 400;
     padding-left: 1rem;
 }
@@ -314,7 +375,7 @@ border-top:1px solid #e2e2e2;
 }
 .highlight p{
     padding-left: 1rem;
-    font-size: 1.4vw;
+    font-size: 16px;
     font-weight: 500;
 }
 
@@ -322,36 +383,23 @@ border-top:1px solid #e2e2e2;
     list-style:circle;
     padding-left: 1rem;
     margin-left: 3rem;
-    font-size: 1.2vw;
+    font-size: 14px;
 }
 
 #policy{
-    font-size: 1.2vw;
+    font-size: 15px;
 }
 
 /*vertical line*/
 div.vertical-line{
- 
+    top: -0.5%;
+    left:10%;
+    z-index: -1;
+    position: absolute;
     width: 1px; /* Line width */
-    background-color: black; /* Line color */
-    height: 100%; /* Override in-line if you want specific height. */
-    float: left; /* Causes the line to float to left of content. 
+    background-color:#bebebe; /* Line color */
+    height:100%; /* Override in-line if you want specific height. */
+    /* Causes the line to float to left of content. 
       You can instead use position:absolute or display:inline-block
       if this fits better with your design */
   }
-
-  .sticky {
-    position: fixed;
-    top: 11vh;
-width: 68%;
-  }
-  #headr{
-    z-index: 1;
-  }
-  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
-    padding-top: 102px;
-    
-  }
- 
-  
