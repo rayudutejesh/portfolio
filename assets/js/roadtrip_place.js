@@ -152,10 +152,10 @@ $(window).scroll(function(e){
     var isPositionFixed = ($el.css('position') == 'fixed');
     if ($(this).scrollTop() > 450 && !isPositionFixed){ 
         
-      $el.css({'position': 'fixed','top':'10vh','z-index':'100','height':'','border':''}); 
+      $el.css({'position': 'fixed','top':'10vh','z-index':'100','height':'','border':'','width':'70%'}); 
     }
     if($(this).scrollTop() < 450 && isPositionFixed){
-      $el.css({'position': 'static','height':'60px'}); 
+      $el.css({'position': 'static','height':'60px','width':'100%'}); 
     } 
   });
   //sticky daylist funnction/////////////////////
