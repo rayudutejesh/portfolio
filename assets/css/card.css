@@ -231,9 +231,7 @@ border-bottom:1px solid #e2e2e2;
     border-bottom:1px solid #e2e2e2;
 
 }
-.activity.active3{
-    background-color: #black;
-}
+
 .active3 {
     color: #009961!important;
     border-radius: 30px;
@@ -258,11 +256,12 @@ border-bottom:1px solid #e2e2e2;
   .datacardbox {
       margin: 0;
     padding:2rem;
+    padd-left: 3rem;
     z-index: 1;
     position: relative;
     background-color: #fff;
     width: 107%;
-    left: -5%;
+    left: -4%;
 }
 .datacardbox::before{
     content: "";
@@ -277,7 +276,6 @@ border-bottom:1px solid #e2e2e2;
       padding-top:2rem;
       height: 80px;
       z-index: 1000;
-      
 }
 
 .anchor1{
@@ -290,11 +288,34 @@ border-bottom:1px solid #e2e2e2;
     font-size: 15px;
 }
 .day_list a{
-    padding-left: 2em;
+    padding-left: 15px;
     font-size: 15px;
+    padding-top: 5px;
+    margin-top: 5px;
     border: none;
     height: 35px;
     margin-left: 3%;
+}
+.day_list a:hover{
+    color:#fff;
+    display: block;
+    background-color: #009961;
+    justify-content: center;
+   
+    border-radius: 30px;
+    width: 40px;
+    height: 30px;
+}
+.active4{
+    color: #ffffff;
+    display: block;
+    background-color: #009961;
+    justify-content: center;
+    
+    border-radius: 30px;
+    width: 40px;
+
+
 }
 .datacardbox .header{
     

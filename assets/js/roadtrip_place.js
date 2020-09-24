@@ -30,6 +30,11 @@
                 $(this).addClass('active2');
 
             });
+            $(".day_list a").on('click', function () {
+                $(this).siblings().removeClass('active4');
+                $(this).addClass('active4');
+
+            });
 
             $("#visa1").on("click", function () {
                 $(".cardboxbody").css("display", "block");
@@ -164,11 +169,11 @@ $(window).scroll(function(e){
     
     var isPositionFixed = ($el.css('position') == 'fixed');
     if ($(this).scrollTop() > 450 && !isPositionFixed){ 
-      $el.css({'position': 'fixed','top': '170px','width':'100px','z-index':'100'}); 
+      $el.css({'position': 'fixed','top': '170px','width':'50px','z-index':'100'}); 
       $(".cardboxbody").css({'top': '80px'});
     }
     if($(this).scrollTop() < 450 && isPositionFixed){
-      $el.css({'position': 'static', 'top': '0','width':'100%'});
+      $el.css({'position': 'static', 'top': '0','width':'100px'});
       $(".cardboxbody").css({'top': '0'}); 
     } 
   });

@@ -1,0 +1,67 @@
+#hero .search_bar{
+    height: 12vh;
+    width: 95%;
+    padding: 1vh;
+    margin-left: -10px;
+    background-color: #fff;
+    border-radius: 5px;
+    justify-content: space-between;
+    z-index: 0;
+}
+#hero .search_bar h1{
+    color: #4a4a4a;
+    position: absolute ;
+    translate: transform(-40% -15%);
+}
+
+.origin{
+    z-index: 1;
+    width: 24%;
+    height: 10vh;
+    }
+input[type=text]{
+    outline: none;
+    border: none;
+    color: black;
+    border-bottom: 1px solid black;
+}
+input[type=submit] {
+    width: 20%;
+    color: #009961;
+    text-size: 20px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #009961;
+  }
+  input[type=submit]:hover{
+    background-color: #009961;
+    color: #fff;
+  }
+input[type=text]:hover{
+    outline: none;
+    border: none;
+
+    border-bottom: 2px solid #009961;
+}
+.check_in{
+
+color: black;
+width: 24%;
+height: 10vh;
+}
+
+.check_out{
+    
+color: black;
+width: 24%;
+height: 10vh;
+}
+.guests{
+ 
+ color: black;
+ width: 24%;
+ height: 10vh;
+}
